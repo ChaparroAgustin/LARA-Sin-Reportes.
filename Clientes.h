@@ -116,7 +116,7 @@ void Listar_Cliente_x_ID()
     cout<<"Ingrese ID: "<<endl;
     cin>>ID;
     pos =  buscar_cliente(ID);
-    if(pos>0)
+    if(pos>=0)
     {
         cls();
         vec=Leer_Clientes(pos);
@@ -395,7 +395,7 @@ void Nuevo_Cliente()
     cin>>vec.fechanac.dia;
     cout<<"Mes: ";
     cin>>vec.fechanac.mes;
-    cout<<"Año: ";
+    cout<<"AÃ±o: ";
     cin>>vec.fechanac.anio;
     if(!chequedo_Fechanac(vec))
     {
