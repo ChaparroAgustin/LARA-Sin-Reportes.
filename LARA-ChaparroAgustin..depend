@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1589746855 source:c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\main.cpp
+	<iostream>
+	<ctime>
+	<cstring>
+	<clocale>
+	"rlutil.h"
+	"Datos.h"
+	"Prototipos.h"
+	"Mains.h"
+	"Platos.h"
+	"Clientes.h"
+	"Pedidos.h"
+	"Configuracion.h"
+
+1585877436 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1589751792 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\prototipos.h
+
+1589757706 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\mains.h
+
+1589773184 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\platos.h
+
+1589770933 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\clientes.h
+
+1589762056 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\pedidos.h
+
+1589743166 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\datos.h
+
+1589771232 c:\users\agustin\desktop\facultad\facultad 2020 1er cuatrimestre\laboratorio 2\lara-chaparroagustin\configuracion.h
+
