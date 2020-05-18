@@ -115,7 +115,7 @@ int Cant_Platos()
 void Platos_X_Restaurante()
 {
     cls();
-    int ID,cant;
+    int ID,cant,c=0;
     cout<<"ingrese ID del Restaurante: ";
     cin>>ID;
     cant=Cant_Platos();
@@ -154,7 +154,12 @@ void Platos_X_Restaurante()
         {
             listar_Platos(vec[x]);
             cout<<endl;
+            c++;
         }
+    }
+    if(c==0)
+    {
+        cout<<"ID de Restaurante no encontrado"<<endl;
     }
     getch();
 
@@ -178,11 +183,11 @@ void listar_Platos(Platos vec)
 {
     cout<<"ID: "<<vec.ID<<endl;
     cout<<"Nombre: "<<vec.Nombre<<endl;
-    cout<<"Costo de Preparaci贸n: $"<<vec.Costo_Preparacion<<endl;
+    cout<<"Costo de Preparaci髇: $"<<vec.Costo_Preparacion<<endl;
     cout<<"Valor de Venta: $"<<vec.Valor_Venta<<endl;
-    cout<<"Tiempo de Preparaci贸n: "<<vec.Tiempo_Preparacion<<" min"<<endl;
+    cout<<"Tiempo de Preparaci髇: "<<vec.Tiempo_Preparacion<<" min"<<endl;
     cout<<"ID de Restaurante: "<<vec.IDRestaurante<<endl;
-    cout<<"Comisi贸n: "<<vec.Comision<<"%"<<endl;
+    cout<<"Comisi髇: "<<vec.Comision<<"%"<<endl;
     cout<<"ID de Categoria: "<<vec.IDCategoria<<endl;
 }
 
@@ -257,7 +262,7 @@ void Modificar_Plato()
             cout<<"El valor ingresado es menor al costo de preparacion,";
             return;
         }
-        cout<<"Ingrese tiempo de preparaci贸n: ";
+        cout<<"Ingrese tiempo de preparaci髇: ";
         cin>>vec.Tiempo_Preparacion;
         if(Sobreescribir_Platos(vec,pos))
         {
@@ -367,7 +372,7 @@ bool CargarPlatos(Platos *vec)
     cin.getline(vec->Nombre,50);
     if(strlen(vec->Nombre)<=0)
         return false;
-    cout<<"Ingrese Costo de Preparaci贸n: $";
+    cout<<"Ingrese Costo de Preparaci髇: $";
     cin>>vec->Costo_Preparacion;
     if(vec->Costo_Preparacion<0)
         return false;
@@ -375,7 +380,7 @@ bool CargarPlatos(Platos *vec)
     cin>>vec->Valor_Venta;
     if(vec->Valor_Venta<0 || vec->Valor_Venta<vec->Costo_Preparacion)
         return false;
-    cout<<"ingrese Tiempo de Preparaci贸n: ";
+    cout<<"ingrese Tiempo de Preparaci髇: ";
     cin>>vec->Tiempo_Preparacion;
     if(vec->Tiempo_Preparacion<0)
         return false;
@@ -383,7 +388,7 @@ bool CargarPlatos(Platos *vec)
     cin>>vec->IDRestaurante;
     if(vec->IDRestaurante<0)
         return false;
-    cout<<"Ingrese Comisi贸n del Restaurante: ";
+    cout<<"Ingrese Comisi髇 del Restaurante: ";
     cin>>vec->Comision;
     if(vec->Comision<0 || vec->Comision>100)
         return false;
